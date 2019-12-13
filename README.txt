@@ -1,4 +1,4 @@
-Copyright (C) Kristian Wiklund, 2006
+Copyright (C) Kristian Wiklund, 2005-
 
 Don't use this for anything. I'm serious.
 
