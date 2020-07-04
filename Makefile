@@ -48,8 +48,9 @@ clean:
 	rm -f a64cov
 
 test:   a64
-	./a64 tests/test.asm
-	./a64 tests/border.asm
+# this was non-free code, removed. Sorry. 
+#	./a64 tests/test.asm
+#	./a64 tests/border.asm
 
 install: a64
 	cp a64 /usr/local/bin
