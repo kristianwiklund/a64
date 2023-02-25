@@ -231,7 +231,7 @@ void throw(char *s) {
   fclose(tin);
   fprintf(stderr, buf);
   fprintf(stderr, "%d: %s\n", lexline, s);
-  unlink(tmpfn);
+  //unlink(tmpfn);
   exit(1);
 }
 
