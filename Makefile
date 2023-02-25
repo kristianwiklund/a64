@@ -4,7 +4,7 @@
  
 CFLAGS = -O2
 
-all: a64 l64 a64cov
+all: a64 l64 #a64cov
 
 yaccer.c: yaccer.y
 	bison -v -d -o yaccer.c yaccer.y

@@ -13,13 +13,19 @@ Copyright (C) Kristian Wiklund 2006
 
 #include <stdio.h>
 #include "mnemonics.h"
+#include <string.h>
+#include <stdlib.h>
+extern void throw(char *s);
+extern void yyrestart ( FILE *input_file  );
+extern int yyparse (void);
+#include <unistd.h>
 
 #define GASP "/usr/local/bin/gasp -u -a -I/usr/local/lib/a64/include -c ';' -o %s %s"
-#define USE_GASP
+// #define USE_GASP
 
 int pass=0;
 extern FILE *yyin;
-extern lexline;
+extern int lexline;
 extern int pc;
 extern FILE *out;
 char *tmpfn;

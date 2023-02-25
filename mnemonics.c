@@ -1,5 +1,6 @@
 
 #include "mnemonics.h"
+#include <strings.h>
 
 
 struct opcode mnemonics[] =

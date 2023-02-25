@@ -17,8 +17,9 @@
 #include <stdio.h>
 #include "mnemonics.h"
 #include <string.h>
+#include "emit.h"
 
-YYSTYPE yylval;
+extern YYSTYPE yylval;
 extern YYLTYPE yylloc;
 int lexline=1;
 int lexchar=0;
@@ -161,7 +162,7 @@ int create_label(char *s, int v) {
 	struct label *l;
 
 	if(pass)
-		return;
+		return 0;
 
 	if(l = find_label(s))
 		if(l->pc != v)

@@ -11,7 +11,7 @@ Copyright (C) 2006 Kristian Wiklund
     */
 
 #include <stdio.h>
-
+#include <string.h>
 #include "emit.h"
 #include "mnemonics.h"
 

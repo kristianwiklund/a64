@@ -14,11 +14,17 @@ Copyright (C) 2006, Kristian Wiklund
   #include <stdio.h>
   #include "mnemonics.h"
   #include "yyltype.h"
-
+  #include <stdlib.h>
+  #include <unistd.h>
+  #include <string.h>
+  extern  int create_label(char *s, int v) ;
+  extern int return_label(char *s);
   extern int lexline;
   extern int pass;
   extern char *tmpfn;
-
+  extern int yyerror(char *s);
+  extern int yylex (void);
+  
   int pc=-1;
   int realpc;
   int reloc=0;

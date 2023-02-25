@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /*
 Copyright (C) 2006 Kristian Wiklund
 
